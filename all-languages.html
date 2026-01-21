@@ -11,6 +11,7 @@
         .section h2 { text-align: center; margin-bottom: 10px; }
         .section p { text-align: center; max-width: 700px; margin: 0 auto 30px; color: #555; }
 
+        /* QUICK NAVIGATION BAR */
         .quick-nav {
             display: flex;
             flex-wrap: wrap;
@@ -24,19 +25,21 @@
             display: flex;
             align-items: center;
             gap: 6px;
-            padding: 8px 14px;
-            background: #f3f4f6;
+            padding: 10px 16px;
+            background: #1e3a8a; /* dark blue */
             border-radius: 10px;
             text-decoration: none;
-            color: #111;
+            color: #ffffff; /* white text */
             font-size: 14px;
+            font-weight: 600;
             transition: background 0.2s;
         }
 
         .quick-nav a:hover {
-            background: #e5e7eb;
+            background: #3b82f6; /* lighter blue */
         }
 
+        /* COURSE GRID */
         .course-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
