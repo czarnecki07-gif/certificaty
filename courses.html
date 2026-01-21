@@ -45,12 +45,12 @@
             font-weight: 600;
         }
 
-        /* GRID — ONE ROW */
+        /* GRID — ONE ROW, 5 COLUMNS */
         .course-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 18px;
-            max-width: 1200px;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 16px;
+            max-width: 1400px;
             margin: 40px auto;
             padding: 0 20px;
         }
@@ -59,10 +59,10 @@
         .course-card {
             border: 1px solid #ddd;
             border-radius: 14px;
-            padding: 18px;
+            padding: 16px;
             background: #fff;
             text-align: center;
-            height: 170px;
+            height: 160px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -71,23 +71,23 @@
 
         .course-card h3 {
             margin: 0;
-            font-size: 18px;
+            font-size: 17px;
             color: #1e3a8a;
         }
 
         .course-card p {
             font-size: 12px;
             color: #555;
-            margin: 8px 0 16px;
+            margin: 6px 0 14px;
         }
 
         .button-small {
             display: inline-block;
-            padding: 8px 14px;
+            padding: 7px 12px;
             background: #3b82f6;
             color: white;
             border-radius: 8px;
-            font-size: 13px;
+            font-size: 12px;
             text-decoration: none;
         }
 
@@ -145,11 +145,18 @@
         <a class="button-small" href="all-professional.html#creative">Explore →</a>
     </div>
 
-    <!-- IT & CLOUD -->
+    <!-- IT SKILLS -->
     <div class="course-card">
-        <h3>IT & Cloud</h3>
-        <p>Technical and cloud skills.</p>
+        <h3>IT Skills</h3>
+        <p>Technical and computing skills.</p>
         <a class="button-small" href="all-it.html">Explore →</a>
+    </div>
+
+    <!-- CLOUD SKILLS -->
+    <div class="course-card">
+        <h3>Cloud Skills</h3>
+        <p>AWS, Azure, GCP basics.</p>
+        <a class="button-small" href="all-cloud.html">Explore →</a>
     </div>
 
 </div>
