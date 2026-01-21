@@ -7,44 +7,37 @@
     <link rel="stylesheet" href="styles.css">
 
     <style>
-        .section { margin-top: 50px; }
-        .section h2 { text-align: center; margin-bottom: 10px; }
-        .section p { text-align: center; max-width: 600px; margin: 0 auto 30px; color: #555; }
-
-        .course-grid {
+        .category-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 20px;
+            gap: 30px;
             max-width: 1000px;
-            margin: 0 auto;
+            margin: 40px auto;
         }
 
-        .course-card {
+        .category-card {
             border: 1px solid #ddd;
-            border-radius: 12px;
-            padding: 20px;
+            border-radius: 14px;
+            padding: 30px;
             background: #fff;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
         }
 
-        .course-card h3 { margin-top: 0; font-size: 20px; }
-
-        .tag {
-            display: inline-block;
-            padding: 4px 10px;
-            border-radius: 6px;
-            font-size: 12px;
-            margin-bottom: 10px;
-            font-weight: 600;
+        .category-card h3 {
+            margin-top: 0;
+            font-size: 22px;
         }
 
-        .tag-cert { background: #e0f2fe; color: #0369a1; }
-        .tag-exam { background: #fef3c7; color: #92400e; }
+        .category-card p {
+            color: #555;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
 
         .button-small {
             display: inline-block;
-            margin-top: 12px;
-            padding: 10px 18px;
+            padding: 12px 20px;
             background: #3b82f6;
             color: white;
             border-radius: 8px;
@@ -52,7 +45,9 @@
             font-size: 14px;
         }
 
-        .button-small:hover { background: #2563eb; }
+        .button-small:hover {
+            background: #2563eb;
+        }
     </style>
 </head>
 
@@ -74,158 +69,38 @@
 
 <div class="container">
 
-    <!-- CLOUD -->
-    <div class="section">
-        <h2>Cloud</h2>
-        <p>Learn cloud fundamentals or prepare for global certification exams.</p>
+    <div class="category-grid">
 
-        <div class="course-grid">
-
-            <div class="course-card">
-                <span class="tag tag-exam">External Exam Preparation</span>
-                <h3>AWS Cloud Practitioner</h3>
-                <a class="button-small" href="aws-cloud-practitioner.html">View Course</a>
-            </div>
-
-            <div class="course-card">
-                <span class="tag tag-exam">External Exam Preparation</span>
-                <h3>Azure Fundamentals</h3>
-                <a class="button-small" href="azure-fundamentals.html">View Course</a>
-            </div>
-
-            <div class="course-card">
-                <span class="tag tag-exam">External Exam Preparation</span>
-                <h3>Google Cloud Digital Leader</h3>
-                <a class="button-small" href="google-cloud-digital-leader.html">View Course</a>
-            </div>
-
-            <div class="course-card">
-                <span class="tag tag-cert">Certificaty Certificate</span>
-                <h3>Cloud Fundamentals</h3>
-                <a class="button-small" href="cloud-fundamentals.html">View Course</a>
-            </div>
-
-            <div class="course-card">
-                <span class="tag tag-cert">Certificaty Certificate</span>
-                <h3>DevOps Basics</h3>
-                <a class="button-small" href="devops-basics.html">View Course</a>
-            </div>
-
+        <div class="category-card">
+            <h3>Cloud</h3>
+            <p>Learn AWS, Azure, Google Cloud and DevOps.</p>
+            <a class="button-small" href="all-cloud.html">View All →</a>
         </div>
-    </div>
 
-    <!-- AI -->
-    <div class="section">
-        <h2>AI</h2>
-        <p>Build essential AI skills with beginner‑friendly courses.</p>
-
-        <div class="course-grid">
-
-            <div class="course-card">
-                <span class="tag tag-cert">Certificaty Certificate</span>
-                <h3>AI Essentials</h3>
-                <a class="button-small" href="ai-essentials.html">View Course</a>
-            </div>
-
-            <div class="course-card">
-                <span class="tag tag-cert">Certificaty Certificate</span>
-                <h3>Prompt Engineering Basics</h3>
-                <a class="button-small" href="prompt-engineering.html">View Course</a>
-            </div>
-
-            <div class="course-card">
-                <span class="tag tag-cert">Certificaty Certificate</span>
-                <h3>Introduction to Machine Learning</h3>
-                <a class="button-small" href="machine-learning-intro.html">View Course</a>
-            </div>
-
+        <div class="category-card">
+            <h3>AI</h3>
+            <p>AI Essentials, Prompt Engineering, Machine Learning.</p>
+            <a class="button-small" href="all-ai.html">View All →</a>
         </div>
-    </div>
 
-    <!-- IT -->
-    <div class="section">
-        <h2>IT</h2>
-        <p>Start your IT journey with foundational skills.</p>
-
-        <div class="course-grid">
-
-            <div class="course-card">
-                <span class="tag tag-cert">Certificaty Certificate</span>
-                <h3>IT Fundamentals</h3>
-                <a class="button-small" href="it-fundamentals.html">View Course</a>
-            </div>
-
-            <div class="course-card">
-                <span class="tag tag-cert">Certificaty Certificate</span>
-                <h3>Cybersecurity Basics</h3>
-                <a class="button-small" href="cybersecurity-basics.html">View Course</a>
-            </div>
-
-            <div class="course-card">
-                <span class="tag tag-cert">Certificaty Certificate</span>
-                <h3>Digital Skills</h3>
-                <a class="button-small" href="digital-skills.html">View Course</a>
-            </div>
-
+        <div class="category-card">
+            <h3>IT</h3>
+            <p>IT Fundamentals, Cybersecurity, Digital Skills.</p>
+            <a class="button-small" href="all-it.html">View All →</a>
         </div>
-    </div>
 
-    <!-- LANGUAGES -->
-    <div class="section">
-        <h2>Languages</h2>
-        <p>Learn English, Polish or one of 15+ global languages.</p>
-
-        <div class="course-grid">
-
-            <div class="course-card">
-                <span class="tag tag-cert">Certificaty Certificate</span>
-                <h3>English A1–C1</h3>
-                <a class="button-small" href="english.html">View Courses</a>
-            </div>
-
-            <div class="course-card">
-                <span class="tag tag-cert">Certificaty Certificate</span>
-                <h3>English for Work</h3>
-                <a class="button-small" href="english-work.html">View Course</a>
-            </div>
-
-            <div class="course-card">
-                <span class="tag tag-exam">External Exam Preparation</span>
-                <h3>PTE English</h3>
-                <a class="button-small" href="pte-english.html">View Course</a>
-            </div>
-
-            <div class="course-card">
-                <span class="tag tag-exam">External Exam Preparation</span>
-                <h3>TOEFL / IELTS</h3>
-                <a class="button-small" href="toefl-ielts.html">View Course</a>
-            </div>
-
-            <div class="course-card">
-                <span class="tag tag-cert">Certificaty Certificate</span>
-                <h3>Polish A1–B2</h3>
-                <a class="button-small" href="polish-a1.html">View Courses</a>
-            </div>
-
-            <!-- OTHER LANGUAGES -->
-            <div class="course-card"><span class="tag tag-cert">Certificaty Certificate</span><h3>Spanish for Foreigners</h3><a class="button-small" href="spanish.html">View Course</a></div>
-            <div class="course-card"><span class="tag tag-cert">Certificaty Certificate</span><h3>Italian for Foreigners</h3><a class="button-small" href="italian.html">View Course</a></div>
-            <div class="course-card"><span class="tag tag-cert">Certificaty Certificate</span><h3>Portuguese for Foreigners</h3><a class="button-small" href="portuguese.html">View Course</a></div>
-            <div class="course-card"><span class="tag tag-cert">Certificaty Certificate</span><h3>Arabic for Foreigners</h3><a class="button-small" href="arabic.html">View Course</a></div>
-            <div class="course-card"><span class="tag tag-cert">Certificaty Certificate</span><h3>Hindi for Foreigners</h3><a class="button-small" href="hindi.html">View Course</a></div>
-            <div class="course-card"><span class="tag tag-cert">Certificaty Certificate</span><h3>Chinese for Foreigners</h3><a class="button-small" href="chinese.html">View Course</a></div>
-            <div class="course-card"><span class="tag tag-cert">Certificaty Certificate</span><h3>Japanese for Foreigners</h3><a class="button-small" href="japanese.html">View Course</a></div>
-            <div class="course-card"><span class="tag tag-cert">Certificaty Certificate</span><h3>Korean for Foreigners</h3><a class="button-small" href="korean.html">View Course</a></div>
-            <div class="course-card"><span class="tag tag-cert">Certificaty Certificate</span><h3>Dutch for Foreigners</h3><a class="button-small" href="dutch.html">View Course</a></div>
-            <div class="course-card"><span class="tag tag-cert">Certificaty Certificate</span><h3>Swedish for Foreigners</h3><a class="button-small" href="swedish.html">View Course</a></div>
-            <div class="course-card"><span class="tag tag-cert">Certificaty Certificate</span><h3>Norwegian for Foreigners</h3><a class="button-small" href="norwegian.html">View Course</a></div>
-            <div class="course-card"><span class="tag tag-cert">Certificaty Certificate</span><h3>Turkish for Foreigners</h3><a class="button-small" href="turkish.html">View Course</a></div>
-            <div class="course-card"><span class="tag tag-cert">Certificaty Certificate</span><h3>Greek for Foreigners</h3><a class="button-small" href="greek.html">View Course</a></div>
-            <div class="course-card"><span class="tag tag-cert">Certificaty Certificate</span><h3>Czech for Foreigners</h3><a class="button-small" href="czech.html">View Course</a></div>
-            <div class="course-card"><span class="tag tag-cert">Certificaty Certificate</span><h3>Slovak for Foreigners</h3><a class="button-small" href="slovak.html">View Course</a></div>
-            <div class="course-card"><span class="tag tag-cert">Certificaty Certificate</span><h3>Ukrainian for Foreigners</h3><a class="button-small" href="ukrainian.html">View Course</a></div>
-
+        <div class="category-card">
+            <h3>Languages</h3>
+            <p>English, Polish, PTE, TOEFL/IELTS, Foreign Languages.</p>
+            <a class="button-small" href="all-languages.html">View All →</a>
         </div>
+
+        <div class="category-card">
+            <h3>Professional Skills</h3>
+            <p>Practical skills for work and everyday life.</p>
+            <a class="button-small" href="all-professional.html">View All →</a>
+        </div>
+
     </div>
 
 </div>
