@@ -5,38 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About – Certificaty</title>
     <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .section {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .section p {
+            max-width: 800px;
+            margin: 0 auto 20px;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            margin: 40px auto;
+        }
+
+        .value-card {
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+        }
+
+        .value-card h3 {
+            margin-top: 0;
+        }
+    </style>
 </head>
 
 <body>
 
-<header>
-    <h1>About Certificaty</h1>
-    <p>Clarity. Structure. Growth.</p>
+<header style="
+    padding: 70px 20px;
+    text-align:center;
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+    color:white;
+">
+    <h1 style="
+        font-size: 72px;
+        margin: 0;
+        letter-spacing: 3px;
+        font-weight: 800;
+    ">
+        CERTIFICATY
+    </h1>
+
+    <p style="
+        margin-top: 14px;
+        font-size: 24px;
+        letter-spacing: 1px;
+    ">
+        About Us
+    </p>
 </header>
 
 <div class="navbar">
     <a href="index.html">Home</a>
     <a href="courses.html">Courses</a>
-    <a href="blog.html">Blog</a>
+    <a href="certificate-sample.html">Certificate</a>
+    <a href="verify.html">Verify</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
 </div>
 
 <div class="container">
-    <h2>Our Mission</h2>
-    <p>
-        Certificaty was created to make learning simple, structured and accessible. 
-        We believe that anyone can grow their career with the right guidance.
-    </p>
 
-    <h3>What Makes Us Different</h3>
-    <ul>
-        <li>Clear explanations</li>
-        <li>Beginner‑friendly approach</li>
-        <li>Structured learning paths</li>
-        <li>Focus on real understanding</li>
-        <li>Independent and unbiased</li>
-    </ul>
+    <div class="section">
+        <h2>Our Mission</h2>
+        <p>
+            Certificaty is a global learning platform designed to help people acquire practical skills,
+            prepare for international certification exams, and earn verifiable digital certificates.
+            Our mission is simple: make high‑quality education accessible, structured, and globally recognized.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>What We Offer</h2>
+        <p>
+            We provide courses in Cloud, AI, IT, Languages, and Professional Skills.  
+            Some courses include a Certificaty digital certificate, while others prepare you for
+            external global exams such as AWS Cloud Practitioner, Azure Fundamentals, Google Cloud Digital Leader,
+            PTE English, TOEFL, and IELTS.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Our Values</h2>
+
+        <div class="values-grid">
+            <div class="value-card">
+                <h3>Clarity</h3>
+                <p>We design courses that are structured, simple, and easy to follow.</p>
+            </div>
+
+            <div class="value-card">
+                <h3>Quality</h3>
+                <p>Every course is built with precision, accuracy, and global standards in mind.</p>
+            </div>
+
+            <div class="value-card">
+                <h3>Growth</h3>
+                <p>We help learners grow their skills, careers, and opportunities worldwide.</p>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 <footer>
