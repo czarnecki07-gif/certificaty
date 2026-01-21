@@ -11,11 +11,40 @@
         .section h2 { text-align: center; margin-bottom: 10px; }
         .section p { text-align: center; max-width: 700px; margin: 0 auto 30px; color: #555; }
 
+        /* QUICK NAVIGATION BAR */
+        .quick-nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 14px;
+            margin: 30px auto 10px;
+            max-width: 900px;
+        }
+
+        .quick-nav a {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 10px 16px;
+            background: #1e3a8a;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .quick-nav a:hover {
+            background: #3b82f6;
+        }
+
+        /* COURSE GRID */
         .course-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 30px;
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 40px auto;
         }
 
@@ -51,18 +80,16 @@
 
         .button-big:hover { background: #2563eb; }
 
-        .skill-check-box {
-            text-align: center;
-            margin-top: 40px;
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            font-size: 12px;
+            border-radius: 6px;
+            margin-bottom: 12px;
+            font-weight: 600;
+            letter-spacing: 0.3px;
         }
-
-        .exam-note {
-            text-align:center;
-            max-width:700px;
-            margin:20px auto 0;
-            color:#777;
-            font-size:13px;
-        }
+        .badge.certificaty { background:#1e3a8a; color:white; }
     </style>
 </head>
 
@@ -84,109 +111,198 @@
     <a href="contact.html">Contact</a>
 </div>
 
+<!-- QUICK NAVIGATION BAR -->
+<div class="quick-nav">
+    <a href="#business">📊 Business & Office</a>
+    <a href="#career">💼 Career Skills</a>
+    <a href="#digital">💻 Digital Skills</a>
+    <a href="#softskills">🌟 Soft Skills</a>
+    <a href="#entrepreneurship">🚀 Entrepreneurship</a>
+</div>
+
 <div class="container">
 
-    <div class="section">
-        <h2>Professional Skills Path</h2>
-        <p>Develop essential workplace skills for communication, productivity, digital tools and business fundamentals.</p>
+    <!-- BUSINESS & OFFICE -->
+    <div id="business" class="section">
+        <h2>Business & Office Skills</h2>
+        <p>Develop essential workplace communication and office productivity skills for modern professional environments.</p>
     </div>
-
-    <p class="exam-note">
-        Certification exams (business, digital skills, design) are provided by external providers. 
-        Certificaty prepares you for these exams but does not issue them.
-    </p>
 
     <div class="course-grid">
 
         <div class="course-card">
-            <h3>Business for Beginners</h3>
-            <p>Learn the fundamentals of how companies work, communicate and operate.</p>
-            <a class="button-big" href="business-for-beginners.html">View Course</a>
+            <span class="badge certificaty">Certificaty Certificate</span>
+            <h3>Business Communication</h3>
+            <p>Master clear, professional communication for meetings, presentations and workplace interactions.</p>
+            <a class="button-big" href="business-communication.html">View Course</a>
         </div>
 
         <div class="course-card">
-            <h3>Workplace Essentials</h3>
-            <p>Master workplace etiquette, expectations, culture and professional behavior.</p>
-            <a class="button-big" href="workplace-essentials.html">View Course</a>
+            <span class="badge certificaty">Certificaty Certificate</span>
+            <h3>Office Productivity (Word, Excel, PowerPoint)</h3>
+            <p>Learn essential tools for office work, document creation, spreadsheets and presentations.</p>
+            <a class="button-big" href="office-productivity.html">View Course</a>
         </div>
 
         <div class="course-card">
-            <h3>Communication for Work</h3>
-            <p>Improve communication, clarity, tone and effectiveness in everyday work.</p>
-            <a class="button-big" href="communication-for-work.html">View Course</a>
+            <span class="badge certificaty">Certificaty Certificate</span>
+            <h3>Email & Professional Writing</h3>
+            <p>Write clear, effective and professional emails, reports and workplace documents.</p>
+            <a class="button-big" href="email-writing.html">View Course</a>
         </div>
 
         <div class="course-card">
-            <h3>Effective Teamwork</h3>
-            <p>Learn how to collaborate, resolve conflicts and work efficiently in teams.</p>
-            <a class="button-big" href="effective-teamwork.html">View Course</a>
-        </div>
-
-        <div class="course-card">
-            <h3>Customer Service Basics</h3>
-            <p>Develop communication, problem‑solving and customer interaction skills.</p>
-            <a class="button-big" href="customer-service-basics.html">View Course</a>
-        </div>
-
-        <div class="course-card">
-            <h3>Time Management Basics</h3>
-            <p>Learn how to plan, prioritize and manage your time effectively.</p>
-            <a class="button-big" href="time-management-basics.html">View Course</a>
-        </div>
-
-        <div class="course-card">
-            <h3>Problem Solving & Critical Thinking</h3>
-            <p>Develop analytical thinking and structured problem‑solving skills.</p>
-            <a class="button-big" href="problem-solving-critical-thinking.html">View Course</a>
-        </div>
-
-        <div class="course-card">
-            <h3>Project Basics</h3>
-            <p>Understand how projects work, roles, tools and basic project workflows.</p>
-            <a class="button-big" href="project-basics.html">View Course</a>
-        </div>
-
-        <div class="course-card">
-            <h3>Digital Skills for Work</h3>
-            <p>Learn essential digital tools, cloud basics, AI tools and online collaboration.</p>
-            <a class="button-big" href="digital-skills-for-work.html">View Course</a>
-        </div>
-
-        <div class="course-card">
-            <h3>Excel for Beginners</h3>
-            <p>Master the basics of spreadsheets, formulas, tables and data organization.</p>
-            <a class="button-big" href="excel-for-beginners.html">View Course</a>
-        </div>
-
-        <div class="course-card">
-            <h3>Office Suite Basics</h3>
-            <p>Learn Google Workspace or Microsoft 365 for documents, sheets and presentations.</p>
-            <a class="button-big" href="office-suite-basics.html">View Course</a>
-        </div>
-
-        <div class="course-card">
-            <h3>Cybersecurity for Everyday Work</h3>
-            <p>Stay safe at work: phishing, passwords, data protection and secure habits.</p>
-            <a class="button-big" href="cybersecurity-for-everyday-work.html">View Course</a>
-        </div>
-
-        <div class="course-card">
-            <h3>Basics of Computer Graphics</h3>
-            <p>Learn the fundamentals of digital graphics, composition, color and essential tools.</p>
-            <a class="button-big" href="basics-of-computer-graphics.html">View Course</a>
-        </div>
-
-        <div class="course-card">
-            <h3>Basics of Video Editing</h3>
-            <p>Learn basic video editing, audio, cuts, transitions and short‑form content.</p>
-            <a class="button-big" href="basics-of-video-editing.html">View Course</a>
+            <span class="badge certificaty">Certificaty Certificate</span>
+            <h3>Customer Service Skills</h3>
+            <p>Learn communication and problem‑solving skills for customer‑facing roles.</p>
+            <a class="button-big" href="customer-service.html">View Course</a>
         </div>
 
     </div>
 
-    <div class="skill-check-box">
-        <p>Not sure where to start?</p>
-        <a class="button-big" href="professional-skill-check.html">Take Professional Skill Check →</a>
+    <!-- CAREER SKILLS -->
+    <div id="career" class="section">
+        <h2>Career & Workplace Skills</h2>
+        <p>Build practical skills for job applications, interviews and effective workplace performance.</p>
+    </div>
+
+    <div class="course-grid">
+
+        <div class="course-card">
+            <span class="badge certificaty">Certificaty Certificate</span>
+            <h3>CV & Cover Letter Writing</h3>
+            <p>Create professional job applications that stand out to employers.</p>
+            <a class="button-big" href="cv-writing.html">View Course</a>
+        </div>
+
+        <div class="course-card">
+            <span class="badge certificaty">Certificaty Certificate</span>
+            <h3>Job Interview Preparation</h3>
+            <p>Prepare for interviews with confidence, structure and strong communication.</p>
+            <a class="button-big" href="interview-prep.html">View Course</a>
+        </div>
+
+        <div class="course-card">
+            <span class="badge certificaty">Certificaty Certificate</span>
+            <h3>Workplace Communication</h3>
+            <p>Improve collaboration, clarity and professionalism in workplace interactions.</p>
+            <a class="button-big" href="workplace-communication.html">View Course</a>
+        </div>
+
+        <div class="course-card">
+            <span class="badge certificaty">Certificaty Certificate</span>
+            <h3>Time Management & Productivity</h3>
+            <p>Learn strategies to stay organized, focused and effective at work.</p>
+            <a class="button-big" href="time-management.html">View Course</a>
+        </div>
+
+    </div>
+
+    <!-- DIGITAL SKILLS -->
+    <div id="digital" class="section">
+        <h2>Digital Skills</h2>
+        <p>Gain essential digital competencies for modern workplaces and online environments.</p>
+    </div>
+
+    <div class="course-grid">
+
+        <div class="course-card">
+            <span class="badge certificaty">Certificaty Certificate</span>
+            <h3>Digital Literacy</h3>
+            <p>Learn essential digital concepts, tools and online navigation skills.</p>
+            <a class="button-big" href="digital-literacy.html">View Course</a>
+        </div>
+
+        <div class="course-card">
+            <span class="badge certificaty">Certificaty Certificate</span>
+            <h3>Online Safety & Cyber Awareness</h3>
+            <p>Protect your data, privacy and devices in digital environments.</p>
+            <a class="button-big" href="cyber-awareness.html">View Course</a>
+        </div>
+
+        <div class="course-card">
+            <span class="badge certificaty">Certificaty Certificate</span>
+            <h3>Remote Work Skills</h3>
+            <p>Master tools and habits for effective remote and hybrid work.</p>
+            <a class="button-big" href="remote-work.html">View Course</a>
+        </div>
+
+        <div class="course-card">
+            <span class="badge certificaty">Certificaty Certificate</span>
+            <h3>AI Essentials for Work</h3>
+            <p>Learn how to use AI tools to improve productivity and decision‑making.</p>
+            <a class="button-big" href="ai-essentials.html">View Course</a>
+        </div>
+
+    </div>
+
+    <!-- SOFT SKILLS -->
+    <div id="softskills" class="section">
+        <h2>Soft Skills</h2>
+        <p>Develop interpersonal and cognitive skills essential for teamwork and leadership.</p>
+    </div>
+
+    <div class="course-grid">
+
+        <div class="course-card">
+            <span class="badge certificaty">Certificaty Certificate</span>
+            <h3>Leadership Basics</h3>
+            <p>Learn foundational leadership skills for guiding teams and projects.</p>
+            <a class="button-big" href="leadership-basics.html">View Course</a>
+        </div>
+
+        <div class="course-card">
+            <span class="badge certificaty">Certificaty Certificate</span>
+            <h3>Teamwork & Collaboration</h3>
+            <p>Improve cooperation, communication and group problem‑solving.</p>
+            <a class="button-big" href="teamwork.html">View Course</a>
+        </div>
+
+        <div class="course-card">
+            <span class="badge certificaty">Certificaty Certificate</span>
+            <h3>Problem Solving</h3>
+            <p>Develop structured approaches to analyzing and solving challenges.</p>
+            <a class="button-big" href="problem-solving.html">View Course</a>
+        </div>
+
+        <div class="course-card">
+            <span class="badge certificaty">Certificaty Certificate</span>
+            <h3>Critical Thinking</h3>
+            <p>Strengthen reasoning, evaluation and decision‑making skills.</p>
+            <a class="button-big" href="critical-thinking.html">View Course</a>
+        </div>
+
+    </div>
+
+    <!-- ENTREPRENEURSHIP -->
+    <div id="entrepreneurship" class="section">
+        <h2>Entrepreneurship</h2>
+        <p>Learn essential skills for starting and managing your own business or freelance career.</p>
+    </div>
+
+    <div class="course-grid">
+
+        <div class="course-card">
+            <span class="badge certificaty">Certificaty Certificate</span>
+            <h3>Starting a Small Business</h3>
+            <p>Learn the fundamentals of planning, launching and managing a business.</p>
+            <a class="button-big" href="small-business.html">View Course</a>
+        </div>
+
+        <div class="course-card">
+            <span class="badge certificaty">Certificaty Certificate</span>
+            <h3>Freelancing Essentials</h3>
+            <p>Build the skills needed to start and grow a freelance career.</p>
+            <a class="button-big" href="freelancing.html">View Course</a>
+        </div>
+
+        <div class="course-card">
+            <span class="badge certificaty">Certificaty Certificate</span>
+            <h3>Marketing Basics</h3>
+            <p>Understand key marketing concepts for promoting products and services.</p>
+            <a class="button-big" href="marketing-basics.html">View Course</a>
+        </div>
+
     </div>
 
 </div>
