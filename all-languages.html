@@ -11,6 +11,32 @@
         .section h2 { text-align: center; margin-bottom: 10px; }
         .section p { text-align: center; max-width: 700px; margin: 0 auto 30px; color: #555; }
 
+        .quick-nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 14px;
+            margin: 30px auto 10px;
+            max-width: 900px;
+        }
+
+        .quick-nav a {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 14px;
+            background: #f3f4f6;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #111;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .quick-nav a:hover {
+            background: #e5e7eb;
+        }
+
         .course-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -96,6 +122,22 @@
     <a href="contact.html">Contact</a>
 </div>
 
+<!-- QUICK NAVIGATION BAR -->
+<div class="quick-nav">
+    <a href="#arabic">🇦🇪 Arabic</a>
+    <a href="#chinese">🇨🇳 Chinese</a>
+    <a href="#english">🇬🇧 English</a>
+    <a href="#french">🇫🇷 French</a>
+    <a href="#german">🇩🇪 German</a>
+    <a href="#italian">🇮🇹 Italian</a>
+    <a href="#japanese">🇯🇵 Japanese</a>
+    <a href="#korean">🇰🇷 Korean</a>
+    <a href="#polish">🇵🇱 Polish</a>
+    <a href="#portuguese">🇵🇹 Portuguese</a>
+    <a href="#russian">🇷🇺 Russian</a>
+    <a href="#spanish">🇪🇸 Spanish</a>
+</div>
+
 <div class="container">
 
     <div class="section">
@@ -110,7 +152,7 @@
     <div class="course-grid">
 
         <!-- ARABIC -->
-        <div class="course-card">
+        <div id="arabic" class="course-card">
             <span class="badge certificaty">Certificaty Certificate</span>
             <h3>Arabic A1–A2</h3>
             <p>Learn Modern Standard Arabic for everyday communication.</p>
@@ -125,7 +167,7 @@
         </div>
 
         <!-- CHINESE -->
-        <div class="course-card">
+        <div id="chinese" class="course-card">
             <span class="badge certificaty">Certificaty Certificate</span>
             <h3>Chinese A1–A2</h3>
             <p>Learn Mandarin basics, tones, characters and everyday communication.</p>
@@ -140,7 +182,7 @@
         </div>
 
         <!-- ENGLISH -->
-        <div class="course-card">
+        <div id="english" class="course-card">
             <span class="badge certificaty">Certificaty Certificate</span>
             <h3>English A1–A2</h3>
             <p>Learn essential English vocabulary, grammar and everyday communication.</p>
@@ -162,7 +204,7 @@
         </div>
 
         <!-- FRENCH -->
-        <div class="course-card">
+        <div id="french" class="course-card">
             <span class="badge certificaty">Certificaty Certificate</span>
             <h3>French A1–A2</h3>
             <p>Learn basic French for travel, work and everyday communication.</p>
@@ -177,7 +219,7 @@
         </div>
 
         <!-- GERMAN -->
-        <div class="course-card">
+        <div id="german" class="course-card">
             <span class="badge certificaty">Certificaty Certificate</span>
             <h3>German A1–A2</h3>
             <p>Learn basic German for everyday situations, travel and simple conversations.</p>
@@ -192,7 +234,7 @@
         </div>
 
         <!-- ITALIAN -->
-        <div class="course-card">
+        <div id="italian" class="course-card">
             <span class="badge certificaty">Certificaty Certificate</span>
             <h3>Italian A1–A2</h3>
             <p>Learn essential Italian vocabulary, grammar and communication.</p>
@@ -207,7 +249,7 @@
         </div>
 
         <!-- JAPANESE -->
-        <div class="course-card">
+        <div id="japanese" class="course-card">
             <span class="badge certificaty">Certificaty Certificate</span>
             <h3>Japanese A1–A2</h3>
             <p>Learn basic Japanese vocabulary, grammar and communication.</p>
@@ -222,7 +264,7 @@
         </div>
 
         <!-- KOREAN -->
-        <div class="course-card">
+        <div id="korean" class="course-card">
             <span class="badge certificaty">Certificaty Certificate</span>
             <h3>Korean A1–A2</h3>
             <p>Learn Hangul, basic grammar and everyday Korean communication.</p>
@@ -236,8 +278,30 @@
             <a class="button-big" href="korean-exam-prep.html">View Course</a>
         </div>
 
-        <!-- PORTUGUESE -->
+        <!-- POLISH (3 COURSES) -->
+        <div id="polish" class="course-card">
+            <span class="badge certificaty">Certificaty Certificate</span>
+            <h3>Polish A1–A2 (Basic Polish)</h3>
+            <p>Learn essential Polish vocabulary, grammar and everyday communication for life in Poland.</p>
+            <a class="button-big" href="polish-a1-a2.html">View Course</a>
+        </div>
+
         <div class="course-card">
+            <span class="badge external">External Exam & Certificate</span>
+            <h3>Polish Exam Preparation</h3>
+            <p>Prepare for the official State Certificate Examination in Polish as a Foreign Language.</p>
+            <a class="button-big" href="polish-exam-prep.html">View Course</a>
+        </div>
+
+        <div class="course-card">
+            <span class="badge certificaty">Certificaty Certificate</span>
+            <h3>Polish for Ukrainians – Fast Track</h3>
+            <p>Fast and practical Polish course designed specifically for Ukrainian learners.</p>
+            <a class="button-big" href="polish-for-ukrainians-fast-track.html">View Course</a>
+        </div>
+
+        <!-- PORTUGUESE -->
+        <div id="portuguese" class="course-card">
             <span class="badge certificaty">Certificaty Certificate</span>
             <h3>Portuguese A1–A2</h3>
             <p>Learn essential Portuguese for travel, work and communication.</p>
@@ -252,7 +316,7 @@
         </div>
 
         <!-- RUSSIAN -->
-        <div class="course-card">
+        <div id="russian" class="course-card">
             <span class="badge certificaty">Certificaty Certificate</span>
             <h3>Russian A1–A2</h3>
             <p>Learn basic Russian vocabulary, grammar and communication.</p>
@@ -267,7 +331,7 @@
         </div>
 
         <!-- SPANISH -->
-        <div class="course-card">
+        <div id="spanish" class="course-card">
             <span class="badge certificaty">Certificaty Certificate</span>
             <h3>Spanish A1–A2</h3>
             <p>Learn the basics of Spanish vocabulary, grammar and communication.</p>
