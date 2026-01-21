@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Skill Check – Certificaty</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .question-box {
+            max-width: 700px;
+            margin: 60px auto;
+            padding: 40px;
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .question-number {
+            font-size: 18px;
+            color: #3b82f6;
+            margin-bottom: 10px;
+        }
+
+        .question-text {
+            font-size: 22px;
+            margin-bottom: 30px;
+        }
+
+        .answer-btn {
+            display: block;
+            width: 100%;
+            padding: 14px;
+            margin: 10px 0;
+            background: #e5e7eb;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            border: none;
+        }
+
+        .answer-btn:hover {
+            background: #d1d5db;
+        }
+
+        .result-box {
+            max-width: 700px;
+            margin: 60px auto;
+            padding: 40px;
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .button-big {
+            display: inline-block;
+            padding: 14px 26px;
+            background: #3b82f6;
+            color: white;
+            border-radius: 10px;
+            font-size: 16px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .button-big:hover { background: #2563eb; }
+    </style>
+</head>
+
+<body>
+
+<header style="padding: 70px 20px; text-align:center; background: linear-gradient(135deg, #1e3a8a, #3b82f6); color:white;">
+    <h1 style="font-size: 72px; margin: 0; letter-spacing: 3px; font-weight: 800;">CERTIFICATY</h1>
+    <p style="margin-top: 14px; font-size: 24px; letter-spacing: 1px;">AI Skill Check</p>
+</header>
+
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="certificate-sample.html">Certificate</a>
+    <a href="verify.html">Verify</a>
+    <a href="employers.html">Employers</a>
+    <a href="skill-checks.html">Skill Checks</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<div id="quiz-container"></div>
+
+<script>
+const questions = [
+    { q: "What is Artificial Intelligence?", a: ["Systems that mimic human intelligence", "A type of hardware", "A programming language"], correct: 0 },
+    { q: "What is Machine Learning?", a: ["Learning by reading books", "Algorithms that learn from data", "Manual programming"], correct: 1 },
+    { q: "What is a neural network?", a: ["A database", "A model inspired by the human brain", "A type of cloud storage"], correct: 1 },
+    { q: "What is supervised learning?", a: ["Learning without labels", "Learning with labeled data", "Learning by trial and error"], correct: 1 },
+    { q: "What is unsupervised learning?", a: ["Learning from unlabeled data", "Learning from teachers", "Learning from mistakes"], correct: 0 },
+    { q: "What is reinforcement learning?", a: ["Learning from rewards and penalties", "Learning from images", "Learning from text"], correct: 0 },
+    { q: "What is an LLM?", a: ["Large Language Model", "Local Logic Machine", "Linear Learning Module"], correct: 0 },
+    { q: "Which model type powers chatbots?", a: ["LLMs", "Spreadsheets", "Firewalls"], correct: 0 },
+    { q: "What is a dataset?", a: ["A collection of data", "A type of AI chip", "A programming tool"], correct: 0 },
+    { q: "What is overfitting?", a: ["Model memorizes training data", "Model learns too slowly", "Model runs out of memory"], correct: 0 },
+    { q: "What is prompt engineering?", a: ["Designing good inputs for AI models", "Building robots", "Fixing hardware"], correct: 0 },
+    { q: "What is computer vision?", a: ["AI that understands images", "AI that writes code", "AI that manages networks"], correct: 0 },
+    { q: "What is NLP?", a: ["Natural Language Processing", "Network Layer Protocol", "Numeric Logic Programming"], correct: 0 },
+    { q: "What is a chatbot?", a: ["AI that interacts via text or voice", "A database", "A web browser"], correct: 0 },
+    { q: "What is bias in AI?", a: ["Systematic unfairness in model outputs", "A type of memory", "A hardware issue"], correct: 0 },
+    { q: "What is training data?", a: ["Data used to teach a model", "Data used for backups", "Encrypted data"], correct: 0 },
+    { q: "What is inference?", a: ["Using a trained model to make predictions", "Training a model", "Deleting data"], correct: 0 },
+    { q: "What is a transformer model?", a: ["Architecture for processing sequences", "A power converter", "A graphics engine"], correct: 0 },
+    { q: "What is hallucination in AI?", a: ["AI generating incorrect information", "AI overheating", "AI refusing input"], correct: 0 },
+    { q: "What is ethical AI?", a: ["Responsible and fair use of AI", "AI that runs faster", "AI that uses less memory"], correct: 0 }
+];
+
+let current = 0;
+let score = 0;
+
+function showQuestion() {
+    if (current >= questions.length) return showResult();
+
+    const q = questions[current];
+    const container = document.getElementById("quiz-container");
+
+    container.innerHTML = `
+        <div class="question-box">
+            <div class="question-number">Question ${current + 1} of 20</div>
+            <div class="question-text">${q.q}</div>
+            ${q.a.map((ans, i) => `
+                <button class="answer-btn" onclick="answer(${i})">${ans}</button>
+            `).join("")}
+        </div>
+    `;
+}
+
+function answer(i) {
+    if (i === questions[current].correct) score++;
+    current++;
+    showQuestion();
+}
+
+function showResult() {
+    let level = "";
+    if (score <= 7) level = "Beginner";
+    else if (score <= 13) level = "Developing";
+    else if (score <= 17) level = "Ready for Certification";
+    else level = "Certification Level";
+
+    const container = document.getElementById("quiz-container");
+    container.innerHTML = `
+        <div class="result-box">
+            <h2>Your Score: ${score}/20</h2>
+            <h3>Level: ${level}</h3>
+            <p>Recommended next steps:</p>
+            <ul style="list-style:none; padding:0;">
+                <li>• AI Essentials</li>
+                <li>• Prompt Engineering</li>
+                <li>• Machine Learning Basics</li>
+                <li>• Applied AI for Work</li>
+            </ul>
+            <a class="button-big" href="ai-skill-check.html">Try Again</a>
+            <a class="button-big" href="all-ai.html">View AI Courses</a>
+        </div>
+    `;
+}
+
+showQuestion();
+</script>
+
+<footer>
+    © 2026 Certificaty. All rights reserved.
+</footer>
+
+</body>
+</html>
