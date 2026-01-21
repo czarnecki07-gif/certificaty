@@ -7,55 +7,108 @@
     <link rel="stylesheet" href="styles.css">
 
     <style>
-        .category-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 30px;
-            max-width: 1000px;
-            margin: 40px auto;
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
         }
 
-        .category-card {
+        header {
+            padding: 60px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            color: white;
+        }
+
+        header h1 {
+            font-size: 64px;
+            margin: 0;
+            letter-spacing: 3px;
+            font-weight: 800;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 22px;
+            letter-spacing: 1px;
+        }
+
+        .navbar {
+            text-align: center;
+            background: #f3f4f6;
+            padding: 12px;
+        }
+
+        .navbar a {
+            margin: 0 12px;
+            text-decoration: none;
+            color: #1e3a8a;
+            font-weight: 600;
+        }
+
+        /* GRID */
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* SMALL CARDS */
+        .course-card {
             border: 1px solid #ddd;
             border-radius: 14px;
-            padding: 30px;
+            padding: 22px;
             background: #fff;
             text-align: center;
+            height: 220px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             box-shadow: 0 2px 8px rgba(0,0,0,0.06);
         }
 
-        .category-card h3 {
-            margin-top: 0;
-            font-size: 22px;
+        .course-card h3 {
+            margin: 0;
+            font-size: 20px;
+            color: #1e3a8a;
         }
 
-        .category-card p {
+        .course-card p {
+            font-size: 13px;
             color: #555;
-            font-size: 14px;
-            margin-bottom: 20px;
+            margin: 10px 0 20px;
         }
 
         .button-small {
             display: inline-block;
-            padding: 12px 20px;
+            padding: 10px 18px;
             background: #3b82f6;
             color: white;
             border-radius: 8px;
-            text-decoration: none;
             font-size: 14px;
+            text-decoration: none;
         }
 
         .button-small:hover {
             background: #2563eb;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #777;
         }
     </style>
 </head>
 
 <body>
 
-<header style="padding: 70px 20px; text-align:center; background: linear-gradient(135deg, #1e3a8a, #3b82f6); color:white;">
-    <h1 style="font-size: 72px; margin: 0; letter-spacing: 3px; font-weight: 800;">CERTIFICATY</h1>
-    <p style="margin-top: 14px; font-size: 24px; letter-spacing: 1px;">Courses & Learning Paths</p>
+<header>
+    <h1>CERTIFICATY</h1>
+    <p>All Courses</p>
 </header>
 
 <div class="navbar">
@@ -63,44 +116,40 @@
     <a href="courses.html">Courses</a>
     <a href="certificate-sample.html">Certificate</a>
     <a href="verify.html">Verify</a>
+    <a href="employers.html">Employers</a>
+    <a href="skill-checks.html">Skill Checks</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
 </div>
 
-<div class="container">
+<div class="course-grid">
 
-    <div class="category-grid">
+    <!-- LANGUAGES -->
+    <div class="course-card">
+        <h3>Languages</h3>
+        <p>Learn global languages from beginner to advanced levels.</p>
+        <a class="button-small" href="all-languages.html">Explore →</a>
+    </div>
 
-        <div class="category-card">
-            <h3>Cloud</h3>
-            <p>Learn AWS, Azure, Google Cloud and DevOps.</p>
-            <a class="button-small" href="all-cloud.html">View All →</a>
-        </div>
+    <!-- PROFESSIONAL SKILLS -->
+    <div class="course-card">
+        <h3>Professional Skills</h3>
+        <p>Develop essential skills for work, communication and career growth.</p>
+        <a class="button-small" href="all-professional.html">Explore →</a>
+    </div>
 
-        <div class="category-card">
-            <h3>AI</h3>
-            <p>AI Essentials, Prompt Engineering, Machine Learning.</p>
-            <a class="button-small" href="all-ai.html">View All →</a>
-        </div>
+    <!-- CREATIVE SKILLS -->
+    <div class="course-card">
+        <h3>Creative Skills</h3>
+        <p>Learn graphic design, Canva, content creation and visual communication.</p>
+        <a class="button-small" href="all-professional.html#creative">Explore →</a>
+    </div>
 
-        <div class="category-card">
-            <h3>IT</h3>
-            <p>IT Fundamentals, Cybersecurity, Digital Skills.</p>
-            <a class="button-small" href="all-it.html">View All →</a>
-        </div>
-
-        <div class="category-card">
-            <h3>Languages</h3>
-            <p>English, Polish, PTE, TOEFL/IELTS, Foreign Languages.</p>
-            <a class="button-small" href="all-languages.html">View All →</a>
-        </div>
-
-        <div class="category-card">
-            <h3>Professional Skills</h3>
-            <p>Practical skills for work and everyday life.</p>
-            <a class="button-small" href="all-professional.html">View All →</a>
-        </div>
-
+    <!-- IT & CLOUD (OPTIONAL PLACEHOLDER) -->
+    <div class="course-card">
+        <h3>IT & Cloud</h3>
+        <p>Technical skills for modern IT, cloud platforms and digital tools.</p>
+        <a class="button-small" href="all-it.html">Explore →</a>
     </div>
 
 </div>
