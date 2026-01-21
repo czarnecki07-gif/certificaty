@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Courses – Certificaty</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .section { margin-top: 40px; }
+        .section h2 { text-align: center; margin-bottom: 10px; }
+        .section p { text-align: center; max-width: 700px; margin: 0 auto 30px; color: #555; }
+
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+
+        .course-card {
+            border: 1px solid #ddd;
+            border-radius: 14px;
+            padding: 30px;
+            background: #fff;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .course-card h3 {
+            margin-top: 0;
+            font-size: 20px;
+        }
+
+        .course-card p {
+            color: #555;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .button-big {
+            display: inline-block;
+            padding: 14px 26px;
+            background: #3b82f6;
+            color: white;
+            border-radius: 10px;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        .button-big:hover { background: #2563eb; }
+
+        .skill-check-box {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .exam-note {
+            text-align:center;
+            max-width:700px;
+            margin:20px auto 0;
+            color:#777;
+            font-size:13px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header style="padding: 70px 20px; text-align:center; background: linear-gradient(135deg, #1e3a8a, #3b82f6); color:white;">
+    <h1 style="font-size: 72px; margin: 0; letter-spacing: 3px; font-weight: 800;">CERTIFICATY</h1>
+    <p style="margin-top: 14px; font-size: 24px; letter-spacing: 1px;">Language Courses</p>
+</header>
+
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="certificate-sample.html">Certificate</a>
+    <a href="verify.html">Verify</a>
+    <a href="employers.html">Employers</a>
+    <a href="skill-checks.html">Skill Checks</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<div class="container">
+
+    <div class="section">
+        <h2>Language Learning Path</h2>
+        <p>Learn English, Polish and other languages with structured lessons and practical exercises.</p>
+    </div>
+
+    <p class="exam-note">
+        Certification exams (Cambridge, IELTS, TOEFL, state exams) are provided by external providers. 
+        Certificaty prepares you for these exams but does not issue them.
+    </p>
+
+    <div class="course-grid">
+
+        <div class="course-card">
+            <h3>English A1–A2</h3>
+            <p>Learn essential vocabulary, grammar and communication for everyday situations.</p>
+            <a class="button-big" href="english-a1-a2.html">View Course</a>
+        </div>
+
+        <div class="course-card">
+            <h3>English B1–B2</h3>
+            <p>Improve fluency, accuracy and confidence in real‑life communication.</p>
+            <a class="button-big" href="english-b1-b2.html">View Course</a>
+        </div>
+
+        <div class="course-card">
+            <h3>English for Work</h3>
+            <p>Master workplace communication, emails, meetings and professional vocabulary.</p>
+            <a class="button-big" href="english-for-work.html">View Course</a>
+        </div>
+
+        <div class="course-card">
+            <h3>Polish A1–A2</h3>
+            <p>Learn the basics of Polish language for everyday communication.</p>
+            <a class="button-big" href="polish-a1-a2.html">View Course</a>
+        </div>
+
+        <div class="course-card">
+            <h3>Polish A2–B1</h3>
+            <p>Develop your Polish skills for work, study and daily life.</p>
+            <a class="button-big" href="polish-a2-b1.html">View Course</a>
+        </div>
+
+        <div class="course-card">
+            <h3>Polish for Work</h3>
+            <p>Learn workplace Polish for communication with colleagues and customers.</p>
+            <a class="button-big" href="polish-for-work.html">View Course</a>
+        </div>
+
+    </div>
+
+    <div class="skill-check-box">
+        <p>Not sure where to start?</p>
+        <a class="button-big" href="english-skill-check.html">Take English Skill Check →</a>
+        <br><br>
+        <a class="button-big" href="polish-skill-check.html">Take Polish Skill Check →</a>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Certificaty. All rights reserved.
+</footer>
+
+</body>
+</html>
