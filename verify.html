@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Certificate – Certificaty</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .verify-box {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 12px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            text-align: center;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 14px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        .button-big {
+            display: inline-block;
+            padding: 14px 28px;
+            background: #3b82f6;
+            color: white;
+            border-radius: 10px;
+            font-size: 18px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .button-big:hover {
+            background: #2563eb;
+        }
+
+        .result-box {
+            margin-top: 40px;
+            padding: 20px;
+            border-radius: 10px;
+            background: #f9fafb;
+            border: 1px solid #ddd;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header style="
+    padding: 70px 20px;
+    text-align:center;
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+    color:white;
+">
+    <h1 style="
+        font-size: 72px;
+        margin: 0;
+        letter-spacing: 3px;
+        font-weight: 800;
+    ">
+        CERTIFICATY
+    </h1>
+
+    <p style="
+        margin-top: 14px;
+        font-size: 24px;
+        color:white;
+        letter-spacing: 1px;
+    ">
+        Verify Certificate
+    </p>
+</header>
+
+<!-- NAVIGATION -->
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="certificate-sample.html">Certificate</a>
+    <a href="verify.html">Verify</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<!-- VERIFY BOX -->
+<div class="container">
+    <div class="verify-box">
+        <h2>Enter Certificate Number</h2>
+        <p>Verify the authenticity of a Certificaty digital certificate.</p>
+
+        <input type="text" id="certNumber" placeholder="e.g. CERT‑20260120‑4821‑PLF‑A1">
+
+        <button class="button-big" onclick="verifyCert()">Verify</button>
+
+        <div id="result" class="result-box"></div>
+    </div>
+</div>
+
+<script>
+function verifyCert() {
+    const box = document.getElementById("result");
+    const number = document.getElementById("certNumber").value.trim();
+
+    if (number === "") {
+        box.style.display = "block";
+        box.innerHTML = "<strong>Please enter a certificate number.</strong>";
+        return;
+    }
+
+    // Placeholder — backend not implemented yet
+    box.style.display = "block";
+    box.innerHTML = `
+        <strong>Verification Result</strong><br><br>
+        Certificate Number: ${number}<br>
+        Status: <span style="color:green; font-weight:600;">Valid</span><br>
+        Holder: John Doe<br>
+        Course: Polish for Foreigners – A1<br>
+        Issue Date: January 20, 2026
+    `;
+}
+</script>
+
+<footer>
+    © 2026 Certificaty. All rights reserved.
+</footer>
+
+</body>
+</html>
