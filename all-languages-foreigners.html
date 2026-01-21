@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Language Courses for Foreigners – Certificaty</title>
+    <title>Polish for Foreigners – Certificaty</title>
     <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -15,7 +15,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 30px;
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 40px auto;
         }
 
@@ -63,6 +63,18 @@
             color:#777;
             font-size:13px;
         }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            font-size: 12px;
+            border-radius: 6px;
+            margin-bottom: 12px;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+        .badge.certificaty { background:#1e3a8a; color:white; }
+        .badge.external { background:#f59e0b; color:white; }
     </style>
 </head>
 
@@ -70,7 +82,7 @@
 
 <header style="padding: 70px 20px; text-align:center; background: linear-gradient(135deg, #1e3a8a, #3b82f6); color:white;">
     <h1 style="font-size: 72px; margin: 0; letter-spacing: 3px; font-weight: 800;">CERTIFICATY</h1>
-    <p style="margin-top: 14px; font-size: 24px; letter-spacing: 1px;">Language Courses for Foreigners</p>
+    <p style="margin-top: 14px; font-size: 24px; letter-spacing: 1px;">Polish for Foreigners</p>
 </header>
 
 <div class="navbar">
@@ -88,38 +100,53 @@
 
     <div class="section">
         <h2>Polish Language Path for Foreigners</h2>
-        <p>Learn Polish from absolute basics to workplace communication. Designed for foreigners living, studying or working in Poland.</p>
+        <p>Learn Polish for everyday life, work and official purposes. From beginner basics to exam preparation.</p>
     </div>
 
     <p class="exam-note">
-        Certification exams (state Polish exams, language certificates) are provided by external providers. 
-        Certificaty prepares you for these exams but does not issue them.
+        Courses include either a Certificaty Certificate or preparation for an external exam.
     </p>
 
     <div class="course-grid">
 
+        <!-- POLISH A1–A2 -->
         <div class="course-card">
+            <span class="badge certificaty">Certificaty Certificate</span>
             <h3>Polish A1–A2</h3>
-            <p>Learn essential Polish vocabulary, grammar and everyday communication.</p>
+            <p>Learn essential Polish vocabulary, grammar and everyday communication for life in Poland.</p>
             <a class="button-big" href="polish-a1-a2.html">View Course</a>
         </div>
 
+        <!-- POLISH A2–B1 -->
         <div class="course-card">
+            <span class="badge certificaty">Certificaty Certificate</span>
             <h3>Polish A2–B1</h3>
-            <p>Develop your Polish skills for work, study and daily life in Poland.</p>
+            <p>Develop your Polish skills for work, study and daily interactions in Poland.</p>
             <a class="button-big" href="polish-a2-b1.html">View Course</a>
         </div>
 
+        <!-- POLISH FOR WORK -->
         <div class="course-card">
+            <span class="badge certificaty">Certificaty Certificate</span>
             <h3>Polish for Work</h3>
-            <p>Learn workplace Polish for communication with colleagues, clients and employers.</p>
+            <p>Learn practical Polish for workplaces, communication with colleagues and professional situations.</p>
             <a class="button-big" href="polish-for-work.html">View Course</a>
         </div>
 
+        <!-- POLISH FOR UKRAINIANS – FAST TRACK -->
         <div class="course-card">
+            <span class="badge certificaty">Certificaty Certificate</span>
             <h3>Polish for Ukrainians – Fast Track</h3>
-            <p>Accelerated Polish course designed specifically for Ukrainian speakers.</p>
-            <a class="button-big" href="polish-for-ukrainians.html">View Course</a>
+            <p>Fast and practical Polish course designed specifically for Ukrainian learners.</p>
+            <a class="button-big" href="polish-for-ukrainians-fast-track.html">View Course</a>
+        </div>
+
+        <!-- POLISH EXAM PREPARATION -->
+        <div class="course-card">
+            <span class="badge external">External Exam & Certificate</span>
+            <h3>Polish Exam Preparation</h3>
+            <p>Prepare for the official State Certificate Examination in Polish as a Foreign Language.</p>
+            <a class="button-big" href="polish-exam-prep.html">View Course</a>
         </div>
 
     </div>
