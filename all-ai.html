@@ -63,6 +63,18 @@
             color:#777;
             font-size:13px;
         }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            font-size: 12px;
+            border-radius: 6px;
+            margin-bottom: 12px;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+        .badge.certificaty { background:#1e3a8a; color:white; }
+        .badge.external { background:#f59e0b; color:white; }
     </style>
 </head>
 
@@ -92,25 +104,27 @@
     </div>
 
     <p class="exam-note">
-        Certification exams (AI, ML, Data, Cloud) are provided by external providers. 
-        Certificaty prepares you for these exams but does not issue them.
+        Courses include either a Certificaty Certificate or preparation for an external exam.
     </p>
 
     <div class="course-grid">
 
         <div class="course-card">
+            <span class="badge certificaty">Certificaty Certificate</span>
             <h3>AI Essentials</h3>
             <p>Core concepts of AI, ML and LLMs explained in clear, practical language.</p>
             <a class="button-big" href="ai-essentials.html">View Course</a>
         </div>
 
         <div class="course-card">
+            <span class="badge certificaty">Certificaty Certificate</span>
             <h3>Prompt Engineering</h3>
             <p>Learn how to design effective prompts for ChatGPT‑style models and AI tools.</p>
             <a class="button-big" href="prompt-engineering.html">View Course</a>
         </div>
 
         <div class="course-card">
+            <span class="badge certificaty">Certificaty Certificate</span>
             <h3>Applied AI for Work</h3>
             <p>Use AI to write, analyze, summarize and automate everyday tasks at work.</p>
             <a class="button-big" href="applied-ai-for-work.html">View Course</a>
