@@ -63,6 +63,18 @@
             color:#777;
             font-size:13px;
         }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            font-size: 12px;
+            border-radius: 6px;
+            margin-bottom: 12px;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+        .badge.certificaty { background:#1e3a8a; color:white; }
+        .badge.external { background:#f59e0b; color:white; }
     </style>
 </head>
 
@@ -92,25 +104,27 @@
     </div>
 
     <p class="exam-note">
-        Certification exams (AWS, Azure, Google Cloud) are provided by external providers. 
-        Certificaty prepares you for these exams but does not issue them.
+        Courses include either a Certificaty Certificate or preparation for an external exam.
     </p>
 
     <div class="course-grid">
 
         <div class="course-card">
+            <span class="badge certificaty">Certificaty Certificate</span>
             <h3>Cloud Fundamentals</h3>
             <p>Learn the basics of cloud computing, core services, and essential concepts.</p>
             <a class="button-big" href="cloud-fundamentals.html">View Course</a>
         </div>
 
         <div class="course-card">
+            <span class="badge external">External Exam & Certificate</span>
             <h3>AWS Cloud Practitioner</h3>
             <p>Prepare for the AWS CLF‑C02 certification with structured lessons and quizzes.</p>
             <a class="button-big" href="aws-cloud-practitioner.html">View Course</a>
         </div>
 
         <div class="course-card">
+            <span class="badge external">External Exam & Certificate</span>
             <h3>Azure Fundamentals</h3>
             <p>Master the basics of Microsoft Azure and get ready for AZ‑900 certification.</p>
             <a class="button-big" href="azure-fundamentals.html">View Course</a>
