@@ -63,6 +63,18 @@
             color:#777;
             font-size:13px;
         }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            font-size: 12px;
+            border-radius: 6px;
+            margin-bottom: 12px;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+        .badge.certificaty { background:#1e3a8a; color:white; }
+        .badge.external { background:#f59e0b; color:white; }
     </style>
 </head>
 
@@ -92,25 +104,27 @@
     </div>
 
     <p class="exam-note">
-        Certification exams (CompTIA, Cisco, Microsoft, Google) are provided by external providers. 
-        Certificaty prepares you for these exams but does not issue them.
+        Courses include either a Certificaty Certificate or preparation for an external exam.
     </p>
 
     <div class="course-grid">
 
         <div class="course-card">
+            <span class="badge certificaty">Certificaty Certificate</span>
             <h3>IT Fundamentals</h3>
             <p>Learn the basics of hardware, software, networking, security and IT support.</p>
             <a class="button-big" href="it-fundamentals.html">View Course</a>
         </div>
 
         <div class="course-card">
+            <span class="badge external">External Exam & Certificate</span>
             <h3>CompTIA A+ Prep</h3>
             <p>Prepare for the CompTIA A+ certification with structured lessons and practice tests.</p>
             <a class="button-big" href="comptia-a-plus.html">View Course</a>
         </div>
 
         <div class="course-card">
+            <span class="badge certificaty">Certificaty Certificate</span>
             <h3>Networking Basics</h3>
             <p>Understand networks, protocols, routing, switching and essential troubleshooting.</p>
             <a class="button-big" href="networking-basics.html">View Course</a>
